@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  background-image: url("../background.jpg");
+  padding: 60px 40px;
+  border-radius: 5px;
+}
+
+header {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.input-box, form .button {
+  margin: 20px 0;
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+
+.input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+
+  &:focus, &:valid {
+    border-color: #9b59b6;
+  }
+}
+
+form .button {
+  height: 45px;
+  margin: 25px 0 15px;
+
+  input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
+    &:focus {
+      background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    }
+  }
+}
+
+.signup a {
+  color: #6f77e3;
+  text-decoration: None;
+
+  &:focus {
+    color: #9b59b6;
+    text-decoration: underline;
+  }
+}
